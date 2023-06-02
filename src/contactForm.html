@@ -1,89 +1,69 @@
 <form
-                                        onsubmit="return false;"
-                                        class="space-y-6 w-full"
-                                    >
-                                        <div
-                                            class="grid grid-cols-1 sm:grid-cols-2 gap-6"
-                                        >
-                                            <div class="space-y-1">
-                                                <label
-                                                    for="firstname"
-                                                    class="font-medium"
-                                                    >First Name</label
-                                                >
-                                                <input
-                                                    class="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
-                                                    type="text"
-                                                    id="firstname"
-                                                    name="firstname"
-                                                    placeholder="Wendy"
-                                                />
-                                            </div>
-                                            <div class="space-y-1">
-                                                <label
-                                                    for="lastname"
-                                                    class="font-medium"
-                                                    >Last Name</label
-                                                >
-                                                <input
-                                                    class="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
-                                                    type="text"
-                                                    id="lastname"
-                                                    name="lastname"
-                                                    placeholder="Appleseed"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="grid grid-cols-1 sm:grid-cols-2 gap-6"
-                                        >
-                                            <div class="space-y-1">
-                                                <label
-                                                    for="email"
-                                                    class="font-medium"
-                                                    >Email</label
-                                                >
-                                                <input
-                                                    class="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
-                                                    type="email"
-                                                    id="email"
-                                                    name="email"
-                                                    placeholder="wendy.apple@seed.com"
-                                                />
-                                            </div>
-                                            <div class="space-y-1">
-                                                <label
-                                                    for="telephone"
-                                                    class="font-medium"
-                                                    >Phone Number</label
-                                                >
-                                                <input
-                                                    class="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
-                                                    type="text"
-                                                    id="Phone Number"
-                                                    name="Phone Number"
-                                                    placeholder="(021)-454-545"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div class="space-y-1">
-                                            <label
-                                                for="message"
-                                                class="font-medium"
-                                                >How can we help?</label
-                                            >
-                                            <textarea
-                                                class="block border border-gray-200 rounded placeholder-gray-400 px-5 py-3 w-full focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
-                                                id="message"
-                                                name="message"
-                                                placeholder="Hi there, I would like to....."
-                                                rows="6"
-                                            ></textarea>
-                                        </div>
-                                        <button
-                                            type="submit"
-                                            class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-3 py-2 leading-6 rounded border-blue-700 bg-blue-700 text-white hover:text-white hover:bg-blue-800 hover:border-blue-800 focus:ring focus:ring-blue-500 focus:ring-opacity-50 active:bg-blue-700 active:border-blue-700"
-                                        >
-                                            <span>Submit</span>
-                                        </button>
-                                    </form>
+    onsubmit="return false;"
+    class="space-y-6 w-full"
+    data-netlify-recaptcha="true"
+    data-netlify="true"
+>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="space-y-1">
+            <label for="firstname" class="font-medium">First Name</label>
+            <input
+                class="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+                type="text"
+                id="firstname"
+                name="firstname"
+                placeholder="Wendy"
+            />
+        </div>
+        <div class="space-y-1">
+            <label for="lastname" class="font-medium">Last Name</label>
+            <input
+                class="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+                type="text"
+                id="lastname"
+                name="lastname"
+                placeholder="Appleseed"
+            />
+        </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="space-y-1">
+            <label for="email" class="font-medium">Email</label>
+            <input
+                class="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="wendy.apple@seed.com"
+            />
+        </div>
+        <div class="space-y-1">
+            <label for="telephone" class="font-medium">Phone Number</label>
+            <input
+                class="block border placeholder-gray-400 px-5 py-3 leading-6 w-full rounded border-gray-200 focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+                type="text"
+                id="Phone Number"
+                name="Phone Number"
+                placeholder="(021)-454-545"
+            />
+        </div>
+    </div>
+    <div class="space-y-1">
+        <label for="message" class="font-medium">How can we help?</label>
+        <textarea
+            class="block border border-gray-200 rounded placeholder-gray-400 px-5 py-3 w-full focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
+            id="message"
+            name="message"
+            placeholder="Hi there, I would like to....."
+            rows="6"
+        ></textarea>
+    </div>
+    <div class="col-sm-12 mb-3" data-netlify-recaptcha="true" required></div>
+    
+    <button
+        type="submit"
+        class="inline-flex justify-center items-center space-x-2 border font-semibold focus:outline-none px-3 py-2 leading-6 rounded border-blue-700 bg-blue-700 text-white hover:text-white hover:bg-blue-800 hover:border-blue-800 focus:ring focus:ring-blue-500 focus:ring-opacity-50 active:bg-blue-700 active:border-blue-700"
+    >
+        <span>Submit</span>
+    </button>
+</form>
