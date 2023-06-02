@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+  <!-- do not remove this line! -->
+  <title>Team Page</title>
+</head>
+<body>
+  <include src="./views/header.html"></include>
+  <main>
+    <section class="max-w-1200 mx-auto pt-28 px-4 min-h-full">
+      <h1 class="principleTitle">
+        WELCOME TO OUR PAGE
+      </h1>
+      <p class="text-gray-700 mb-5 mt-5">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nulla
+        mauris, sodales vitae viverra ut, tempus ut sem. Aenean vel libero
+        pharetra elit feugiat varius. Praesent hendrerit venenatis velit id
+        hendrerit. Fusce tristique tortor at suscipit condimentum. Maecenas eu
+        neque nibh. Curabitur interdum non nibh ut pharetra. Proin pulvinar
+        pharetra turpis, nec ullamcorper neque ultricies a. Ut et porta nibh, in
+        feugiat risus. Morbi nec feugiat felis. Proin placerat dui id feugiat
+        lobortis. Sed sed libero ligula. Phasellus molestie turpis odio, a
+        convallis diam euismod a.
       </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+      <div class="p-4 w-full">
+        <img src="./assets/images/home.jpg" alt="Card image cap" class="rounded-md contrast-75 hover:contrast-100 w-full h-80 object-cover" />
+      </div>
+    </section>
+  </main>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script>
+  <!-- do not remove this line! -->
+</body>
+
 </html>
